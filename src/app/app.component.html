@@ -1,0 +1,61 @@
+<h1>Get Request from 'https://jsonplaceholder.typicode.com/posts/1/comments'</h1>
+
+<table border="1">
+
+  <tr>
+    <td>ID</td>
+    <td>POST ID</td>
+    <td>NAME</td>
+    <td>EMAIL</td>
+    <td>BODY</td>
+  </tr>
+  <tr *ngFor='let com of listComment'>
+    <td>{{com.id}}</td>
+    <td>{{com.postId}}</td>
+    <td>{{com.name}}</td>
+    <td>{{com.email}}</td>
+    <td>{{com.body}}</td>
+  </tr>
+</table>
+
+<h1>Get Request by Param from 'https://jsonplaceholder.typicode.com/comments?postId=2'</h1>
+
+<table border="1">
+
+  <tr>
+    <td>ID</td>
+    <td>POST ID</td>
+    <td>NAME</td>
+    <td>EMAIL</td>
+    <td>BODY</td>
+  </tr>
+  <tr *ngFor='let com of commentParam'>
+    <td>{{com.id}}</td>
+    <td>{{com.postId}}</td>
+    <td>{{com.name}}</td>
+    <td>{{com.email}}</td>
+    <td>{{com.body}}</td>
+  </tr>
+</table>
+
+<h1>Post Request from 'https://jsonplaceholder.typicode.com/posts'</h1>
+
+<table border="1">
+
+  <tr>
+    <td>ID</td>
+    <td>USER ID</td>
+    <td>TITLE</td> 
+    <td>BODY</td>
+  </tr>
+  <tr>  
+    <td>{{post?.id}}</td>
+    <td>{{post?.userId}}</td>
+    <td>{{post?.title}}</td> 
+    <td>{{post?.body}}</td>
+  </tr>
+</table>
+
+
+
+ 
